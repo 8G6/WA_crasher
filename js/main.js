@@ -10,7 +10,7 @@ progressBar.setPercent(0);
 for(i=0;i<limit;i++){
     sta = (((i+1)*100)/limit).toFixed(3)
     width=parseInt(sta);
-    setTimeout(progressBar.setPercent(width),2)
+    setTimeout(progressBar.setPercent(width),1)
     text+=no_text
 }
 setTimeout(()=>{alert('complte');$('myBar').innerHTML+='<br><br><div style="color:green">complted</div>'},500)
