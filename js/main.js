@@ -5,15 +5,15 @@ let no_text=chr(8206)+chr(8207)
 let text=$('input').value
 let limit=$('limit').value
 let sta=0
-
+progressBar = new ProgressBar("myBar", {'width':'100%', 'height':'30px'});
+progressBar.setPercent(0);
 for(i=0;i<limit;i++){
     sta = (((i+1)*100)/limit).toFixed(3)
-    $('bar').innerHTML+=sta+'<br>'
+    width=parseInt(sta);
+    setTimeout(progressBar.setPercent(width),2)
     text+=no_text
 }
-
-
-setTimeout(()=>{alert('complte');$('bar').innerHTML='<br><div style="color:green">complted</div>'},500)
+setTimeout(()=>{alert('complte');$('myBar').innerHTML+='<br><br><div style="color:green">complted</div>'},500)
 $('out').innerHTML=`<br>
 <input id='output'></input>
 <br>
