@@ -13,7 +13,7 @@ for(i=0;i<limit;i++){
     setTimeout(progressBar.setPercent(width),1)
     text+=no_text
 }
-setTimeout(()=>{alert('complte');$('myBar').innerHTML+='<br><br><div style="color:green">complted</div>'},500)
+setTimeout(()=>{alert('complte');$('myBar').innerHTML+='<br><br><div style="color:green">complted</div><br><br>'},500)
 $('out').innerHTML=`<br>
 <input id='output'></input>
 <br>
