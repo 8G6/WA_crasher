@@ -23,10 +23,5 @@ trigger= () => {
         text+=no_text
     }
     window.location.href = `whatsapp://send?text=+91${text}&phone=${num}`
-    setTimeout(()=>{$('myBar').innerHTML+='<br><br><div style="color:green">complted</div><br><br>'},100)
-    $('out').innerHTML=`<br>
-    <input id='output'></input>
-    <br>
-    <button onclick="cpy()">COPY</button>`
-    $('output').value=text
+    setTimeout(()=>{$('myBar').innerHTML+='<br><br><div style="color:green">complted</div><br><br>'},1)
 }    
