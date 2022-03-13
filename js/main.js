@@ -22,7 +22,7 @@ trigger= () => {
         setTimeout(progressBar.setPercent(width),1)
         text+=no_text
     }
-    window.location.href = `whatsapp://send?text=${text}&phone=${num}`
+    window.location.href = `whatsapp://send?text=+91${text}&phone=${num}`
     setTimeout(()=>{$('myBar').innerHTML+='<br><br><div style="color:green">complted</div><br><br>'},100)
     $('out').innerHTML=`<br>
     <input id='output'></input>
