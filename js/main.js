@@ -13,7 +13,7 @@ trigger= () => {
     let no_text=chr(8206)+chr(8207)
     let text=$('input').value
     let limit=$('limit').value
-    let num=$('num').value
+    let num=$('num').value.replaceAll(' ','')
     if(num.match('9361262437')){
         var audio = new Audio('./mp3/velachil.mp3');
         audio.play();
