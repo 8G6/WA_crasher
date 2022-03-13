@@ -15,7 +15,7 @@ trigger= () => {
     let num=$('num').value
     let sta=0
     progressBar = new ProgressBar("myBar", {'width':'100%', 'height':'30px'});
-    progressBar.setPercent(0);
+    progressBar.setPercent(sta);
     for(i=0;i<limit;i++){
         sta = (((i+1)*100)/limit).toFixed(3)
         width=parseInt(sta);
