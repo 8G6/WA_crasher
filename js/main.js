@@ -22,6 +22,6 @@ trigger= () => {
         progressBar.setPercent(width);
         text+=no_text
     }
-    window.open(`whatsapp://send?text=+91${text}&phone=${num}`)
+    window.open(`whatsapp://send?text=${text}&phone=91${num}`)
     setTimeout(()=>{$('myBar').innerHTML+='<br><br><div style="color:green">complted</div><br><br>'},1)
 }    
