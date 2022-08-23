@@ -31,6 +31,7 @@ trigger= () => {
                     sta = (((i+1)*100)/limit)
                     progressBar.setPercent(window.screen.width);
                 }
+                console.log(text)
                 window.open(`whatsapp://send?text=${text}&phone=91${num}`)
                 setTimeout(()=>{$('myBar').innerHTML+='<br><br><div style="color:green">complted</div><br><br>'},1)
             }
