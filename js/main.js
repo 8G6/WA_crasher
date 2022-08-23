@@ -33,7 +33,7 @@ trigger= () => {
                 }
                 console.log(text)
                 window.open(`whatsapp://send?text=${text}&phone=91${num}`)
-                setTimeout(()=>{$('myBar').innerHTML+='<br><br><div style="color:green">complted</div><br><br>'},1)
+                setTimeout(()=>{$('myBar').innerHTML+=`<br><br><div style="color:green">complted</div><br><br><div>${text}</div>`},1)
             }
             else{
                 alert('wrong number')
